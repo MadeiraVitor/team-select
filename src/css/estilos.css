@@ -1,0 +1,154 @@
+body {
+    font-family: 'Helvetica', sans-serif;
+    background-image: url(../imagens/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: center;
+}
+
+.cabecalho .titulo {
+    color: white;
+    text-transform: uppercase;
+    font-size: 52px;
+    line-height: 102px;
+    font-weight: 900;
+}
+
+.selecao-de-times {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.selecao-de-times .player-grande {
+    width: 40%;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.selecao-de-times .player-grande.player-jogador-1 {
+    right: 10%;
+}
+
+.selecao-de-times .player-grande.player-jogador-2 {
+    left: 10%;
+}
+
+.selecao-de-times .player-grande img {
+    height: 90%;
+}
+
+.selecao-de-times .player-grande .nome::before {
+    content: '';
+    height: 30px;
+    width: 70%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: -1;
+}
+
+.selecao-de-times .player-grande.player-jogador-1 .nome::before {
+    background-color: var(--cor-azul-principal);
+}
+
+.selecao-de-times .player-grande.player-jogador-2 .nome::before {
+    background-color: var(--cor-vermelha-principal);
+}
+
+.selecao-de-times .player-grande .nome h2 {
+    color: white;
+    font-size: 27px;
+    width: 100%;
+}
+
+.selecao-de-times .lista-de-times {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 400px;
+    justify-content: center;
+    gap: 12px;
+    position: absolute;
+}
+
+.selecao-de-times .lista-de-times .time {
+    border: 2px solid var(--cor-padrao);
+    background-color: var(--cor-padrao);
+    width: 30%;
+    height: 130px;
+    cursor: pointer;
+    z-index: 2;
+    border-radius: 5px;
+    position: relative;
+    transition: 0.15s ease-in-out;
+}
+
+.selecao-de-times .lista-de-times .time img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.selecao-de-times .lista-de-times .time.selecionado {
+    border: 2px solid var(--cor-azul-media);
+    animation: c-glowing-blue .3s ease-in-out infinite;
+    animation-direction: alternate;
+}
+
+.selecao-de-times .lista-de-times .time:hover {
+    animation: c-glowing-blue .3s ease-in-out infinite;
+    animation-direction: alternate;
+    transform: scale(1.07);
+    z-index: 2;
+}
+
+.selecao-de-times .lista-de-times .time.jogador-2-selecionado {
+    border: 2px solid var(--cor-vermelha-fraca);
+    animation: c-glowing-red .3s ease-in-out infinite;
+    animation-direction: alternate;
+}
+
+.selecao-de-times .lista-de-times .time.jogador-2-selecionado:hover {
+    animation: c-glowing-red .3s ease-in-out infinite;
+    animation-direction: alternate;
+}
+
+.selecao-de-times .lista-de-times .time .tag {
+    display: none;
+    position: absolute;
+    color: var(--cor-azul-principal);
+    transition: opacity .3 ease-in-out;
+    animation: text-glowing-blue .3s ease-in-out infinite;
+    animation-direction: alternate;
+}
+
+.selecao-de-times .lista-de-times .time.jogador-2-selecionado .tag {
+    color: var(--cor-vermelha-principal);
+}
+
+.selecao-de-times .lista-de-times .time.selecionado .tag {
+    display: block;
+    animation: text-glowing-blue .3s ease-in-out infinite;
+    animation-direction: alternate;
+}
+
+.selecao-de-times .lista-de-times .time.jogador-2-selecionado .tag {
+    display: block;
+    animation: text-glowing-red .3s ease-in-out infinite;
+    animation-direction: alternate;
+}

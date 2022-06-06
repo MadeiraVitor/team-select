@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="src/imagens/favicon.ico" type="image/x-icon">
+    <title>Team Select</title>
+
+    <link rel="stylesheet" href="src/css/variaveis.css">
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/css/animacoes.css">
+    <link rel="stylesheet" href="src/css/estilos.css">
+    <link rel="stylesheet" href="src/css/responsivo.css">
+</head>
+<body>
+    <main>
+        <header class="cabecalho">
+            <h1 class="titulo">Team Select</h1>
+        </header>
+
+        <div class="selecao-de-times">
+            <div class="player-grande player-jogador-1">
+                <img src="src/imagens/real-madrid.png" alt="jogador real madrid" id="player-jogador-1">
+                <div class="nome">
+                    <h2 id="nome-jogador-1">REAL MADRID</h2>
+                </div>
+            </div>
+
+            <ul class="lista-de-times">
+                <li class="time selecionado" id="real-madrid" data-name="REAL MADRID">
+                    <span class="tag">1P</span>
+                    <img src="src/imagens/real-madrid.jpg" alt="escudo real madrid">
+                </li>
+
+                <li class="time" id="psg" data-name="PSG">
+                    <span class="tag">1P</span>
+                    <img src="src/imagens/psg.jpg" alt="escudo psg">
+                </li>
+
+                <li class="time" id="liverpool" data-name="LIVERPOOL">
+                    <span class="tag">1P</span>
+                    <img src="src/imagens/liverpool.jpg" alt="escudo liverpool">
+                </li>
+
+                <li class="time" id="barcelona" data-name="BARCELONA">
+                    <span class="tag">1P</span>
+                    <img src="src/imagens/barcelona.jpg" alt="escudo barcelona">
+                </li>
+
+                <li class="time" id="juventus" data-name="JUVENTUS">
+                    <span class="tag">1P</span>
+                    <img src="src/imagens/juventus.jpg" alt="escudo juventus">
+                </li>
+
+                <li class="time jogador-2-selecionado" id="chelsea" data-name="CHELSEA">
+                    <span class="tag">2P</span>
+                    <img src="src/imagens/chelsea.jpg" alt="escudo chelsea">
+                </li>
+
+                <li class="time" id="manchester-united" data-name="MANCHESTER">
+                    <span class="tag">1P</span>
+                    <img src="src/imagens/manchester-united.jpg" alt="escudo manchester united">
+                </li>
+
+                <li class="time" id="bayern" data-name="FC BAYERN">
+                    <span class="tag">1P</span>
+                    <img src="src/imagens/bayern.jpg" alt="escudo bayern">
+                </li>
+
+                <li class="time" id="arsenal" data-name="ARSENAL">
+                    <span class="tag">1P</span>
+                    <img src="src/imagens/arsenal.jpg" alt="escudo arsenal">
+                </li>
+            </ul>
+
+            <div class="player-grande player-jogador-2">
+                <img src="src/imagens/chelsea.png" alt="jogador chelsea" id="player-jogador-2">
+                <div class="nome">
+                    <h2>CHELSEA</h2>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="src/js/team-select.js"></script>
+</body>
+</html>

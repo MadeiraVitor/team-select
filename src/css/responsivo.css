@@ -1,0 +1,30 @@
+@media (max-width: 1025px){
+    .selecao-de-times .lista-de-times .time {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media (max-width: 700px){
+    main {
+        justify-content: start;
+    }
+
+    .selecao-de-times {
+        align-items: flex-start;
+    }
+
+    .cabecalho .titulo {
+        font-size: 22px;
+    }
+
+    .selecao-de-times .player-grande {
+        display: none;
+    }
+}
+
+@media (max-width: 320px){
+    .selecao-de-times .lista-de-times {
+        gap: 5px;
+    }
+}
